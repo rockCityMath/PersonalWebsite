@@ -1,0 +1,221 @@
+/* ------ Fonts ------ */
+
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url(../fonts/BebasNeue-Regular.ttf);
+} 
+@font-face {
+    font-family: "TekoMedium";
+    src: url(../fonts/Teko-Medium.ttf);
+} 
+@font-face {
+    font-family: "AmiriRegular";
+    src: url(../fonts/Amiri-Regular.ttf);
+} 
+
+/* ------ Media Queries ------ */
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 1%;
+        padding-bottom: 3%;
+    }
+}
+
+@media (min-width: 992px) {
+    .animate {
+        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+}
+
+/* ------ CSS Animations ------ */
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform:translateY(0rem);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+/* ------ Navbar CSS ------ */
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navstyle {
+    color: black;
+    font-size: 28px;
+    font-family: 'BebasNeue-Regular';
+    background-color:white;
+    z-index: 1;
+    position: absolute fixed;
+    padding-bottom: 3%;
+
+}
+
+.navListItem {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.navDropdown {
+    width: fit-content;
+    height: fit-content;
+    background-color: whitesmoke;
+}
+
+.navTitle {
+    font-size: 30px;
+}
+
+.brand {
+    text-align: left ;
+    background-color: white;
+    font-family: BebasNeue-Regular;
+    z-index: 300;
+    padding-left:30px;
+    padding-top: 0px;
+    position: absolute;
+    width: fit-content;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: #FF6961;
+}
+
+/* ------ Body CSS ------ */
+
+/*Wrappers/Styles for side items*/
+.LRCollumn {
+    float:left;
+    width: 25%;
+    justify-content: center;
+    height: 600px;
+    color: #FF6961;
+    
+}
+
+.sidepic{
+    transform: scale(0.5, 0.5);
+}
+
+.sidepic2{
+    transform: scale(0.09, 0.09);
+}
+
+.mepic {
+    transform: scale(0.5, 0.5);
+}
+
+/*Wrappers/Styles for main body items*/
+.mainHeader {
+    text-align:center;
+    font-family: 'TekoMedium' ;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+body {
+    height: 1250px;
+}
+
+.anotherWrap{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.interests {
+    width: 25%;
+    height:25%;
+    padding: 60px;
+}
+
+.paragraph {
+    text-align: center;
+    color: black;
+    font-family: AmiriRegular;
+    font-size: 16pt;
+    padding-top: 20px;
+}
+
+.bodyWrapper{
+    margin-top:10%;
+    width: 100%;
+    height: fit-content;
+}
+
+.mainCollumn {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    text-align: center;    
+    height: 600px;
+}
+
+.centerTitle {
+    text-align:center;
+    font-family: 'TekoMedium' ;
+    padding-top: 100px;    
+}
+
+.splitBodyHeaders {
+    font-family: TekoMedium;
+    font-size: 30px;    
+    width: 25%;
+    text-align: right;
+    float: left;
+    padding: 20px;
+}
+
+.splitBodyText {
+    font-family: AmiriRegular;
+    font-size: 18px;
+    width: 75%;
+    text-align: left;
+    float: left;
+    padding: 20px;
+}
+
+.underlined {
+    text-decoration: underline;
+    font-size: 24pt;
+}
