@@ -11,6 +11,18 @@
 @font-face {
     font-family: "AmiriRegular";
     src: url(../fonts/Amiri-Regular.ttf);
+}
+@font-face {
+    font-family: "AmiriBold";
+    src: url(../fonts/Amiri-Bold.ttf);
+} 
+@font-face {
+    font-family: "Playfair";
+    src: url(../fonts/playfair.ttf);
+} 
+@font-face {
+    font-family: "Newsreader";
+    src: url(../fonts/Newsreader.ttf);
 } 
 
 /* ------ Media Queries ------ */
@@ -221,7 +233,7 @@ a:active {
 
 /* ------ Post Page CSS ------ */
 .postTitle {
-    font-family: AmiriRegular;
+    font-family: Playfair;
     font-size: 70px;
     text-decoration: underline;    
     text-align: center;
@@ -242,7 +254,7 @@ a:active {
     width: 25%;
     height: 80vh;
     color: black;
-    font-family: AmiriRegular;
+    font-family: Playfair;
     font-weight: bold;
     font-size: 30px;    
     text-align: right;
